@@ -5,21 +5,21 @@ Raw transactional data was transformed through Bronze → Silver → Gold layers
 
 🎯 Objectives:
 
-Build analytics-ready data warehouse
+* Build analytics-ready data warehouse
 
-Apply Medallion Architecture
+* Apply Medallion Architecture
 
-Model star schema
+* Model star schema
 
-Reconcile revenue vs payments
+* Reconcile revenue vs payments
 
-Perform business EDA
+* Perform business EDA
 
 🧱 Architecture:
 
 Layer	             Purpose
 Bronze     →    Raw ingestion
-Silver	   →    Cleaned business entities
+Silver	  →   Cleaned business entities
 Gold	     →    Analytics star schema
 Analytics  →    Insights & EDA
 
@@ -40,22 +40,22 @@ Business Insights
 
 ⭐ Key Features:
 
-Revenue reconciliation logic
+* Revenue reconciliation logic
 
-Payment allocation model
+* Payment allocation model
 
-Star schema warehouse
+* Star schema warehouse
 
-Date dimension
+* Date dimension
 
-Analytical views
+* Analytical views
 
 🛠 Tech Stack:
 
-SQL (PostgreSQL)
+* SQL (PostgreSQL)
 
-Data Modeling
+* Data Modeling
 
-Analytics Engineering Concepts
+* Analytics Engineering Concepts
 
-Exploratory Data Analysis
+* Exploratory Data Analysis
