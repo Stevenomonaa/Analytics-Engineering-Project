@@ -1,11 +1,13 @@
 🥈 **Silver Layer**
-Purpose
+
+Purpose:
 
 Transform raw operational data into clean, standardized business tables suitable for analytics modeling.
 
 Tables:
 
 **silver.customers**
+
 Purpose:
 
 Represents unique customers with standardized geographic attributes.
@@ -25,6 +27,7 @@ ZIP codes padded to 5 digits to ensure consistent joins and geographic analysis.
 Cleaning performed here prevents repeated transformations in downstream analytics.
 
 **silver.orders**
+
 Purpose:
 
 Represents validated customer orders.
@@ -40,6 +43,7 @@ Enables creation of a reusable date dimension.
 Simplifies time-based aggregations without repeated casting.
 
 **silver.order_items**
+
 Purpose:
 
 Transactional order line items (fact-level operational data).
@@ -51,6 +55,7 @@ Key Decisions:
 The table represents transactional grain; removing duplicates would destroy business meaning.
 
 **silver.products**
+
 Purpose:
 
 Product reference information.
@@ -66,6 +71,7 @@ Physical dimensions required for logistics analysis.
 Invalid dimensions would distort shipping analytics.
 
 **silver.payments**
+
 Purpose:
 
 Payment attempts and payment structure per order.
