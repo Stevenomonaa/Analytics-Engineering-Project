@@ -8,6 +8,10 @@ Tables:
 
 **silver.customers**
 
+Grain:
+
+One row per customer.
+
 Purpose:
 
 Represents unique customers with standardized geographic attributes.
@@ -28,6 +32,10 @@ Cleaning performed here prevents repeated transformations in downstream analytic
 
 **silver.orders**
 
+Grain:
+
+One row per order.
+
 Purpose:
 
 Represents validated customer orders.
@@ -35,6 +43,13 @@ Represents validated customer orders.
 Transformations:
 * Trimmed whitespaces
 * Split timestamps into date and time columns
+(purchase_date
+
+purchase_time
+
+approved_date
+
+approved_time)
 
 Separating date and time improves analytical flexibility.
 
@@ -44,17 +59,25 @@ Simplifies time-based aggregations without repeated casting.
 
 **silver.order_items**
 
+Data Grain:
+
+One row = one product within one order.
+
 Purpose:
 
 Transactional order line items (fact-level operational data).
 
 Key Decisions:
 
-* Duplicates preserved because multiple orders can contain the same product.
+* Duplicates in product_id preserved because multiple orders can contain the same product.
 
 The table represents transactional grain; removing duplicates would destroy business meaning.
 
 **silver.products**
+
+Grain:
+
+One row per product.
 
 Purpose:
 
@@ -72,6 +95,16 @@ Invalid dimensions would distort shipping analytics.
 
 **silver.payments**
 
+Grain:
+
+One row per payment attempt.
+
+Key Concepts:
+
+payment_sequential tracks retry attempts
+
+payment_installments represents customer repayment schedule to the bank
+
 Purpose:
 
 Payment attempts and payment structure per order.
@@ -85,4 +118,14 @@ Transformations:
 Payments exist at order level, not item level.
 
 Later aggregation required for reconciliation.
+
+During Silver validation:
+
+* Unapproved orders detected
+
+* Payment retries identified
+
+* Non-reconcilable financial differences observed
+
+These findings influenced Gold modeling decisions.
 
