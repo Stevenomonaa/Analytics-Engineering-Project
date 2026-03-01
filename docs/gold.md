@@ -1,4 +1,4 @@
-**Gold Layer — Analytics Model**
+**Gold Layer — Analytics Modelling & Insights**
 
 **Modeling Approach**
 
@@ -127,3 +127,44 @@ The final analytics model enables:
 * Geographic performance
 
 * Shipping cost impact
+
+**Exploratory Data Analysis (EDA)**
+
+EDA focused on extracting actionable insights rather than descriptive statistics.
+
+Examples:
+
+* revenue by weekday
+
+* top performing products
+
+* customer purchasing distribution
+
+* installment adoption patterns
+
+**Advanced EDA**
+
+Advanced analysis included:
+
+* revenue seasonality detection
+
+* customer repeat behavior
+
+* payment behavior segmentation
+
+* shipping vs revenue relationship analysis
+
+**Key Analytics Engineering Learnings**
+
+This project demonstrates:
+
+* layered data architecture
+
+* data grain management
+
+* star schema modeling
+
+* analytical tradeoff decisions
+
+* real-world data quality investigation
+  
