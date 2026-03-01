@@ -9,3 +9,5 @@
 | shipping_charges | shipping_cost     | business language        |
 | item_revenue     | collected_revenue | financial interpretation |
 
+Remaining columns follow the same naming convention principles.
+
