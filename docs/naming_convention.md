@@ -1,3 +1,5 @@
+Column names were standardized in the Silver layer by removing source system prefixes, converting names to snake_case, and improving semantic clarity. The Gold layer further renamed fields to align with business terminology.
+
 | Bronze                   | Silver        | Reason               |
 | ------------------------ | -----------   | -------------------- |
 | customer_city            | city          | remove source prefix |
