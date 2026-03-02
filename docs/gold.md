@@ -167,4 +167,6 @@ This project demonstrates:
 * analytical tradeoff decisions
 
 * real-world data quality investigation
+
+Gold models were initially implemented as views to enable rapid iteration and validation. After confirming metric accuracy, the central fact table was materialized as a table to simulate production warehouse optimization while dimensions remained logical views.
   
