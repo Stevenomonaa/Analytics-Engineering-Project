@@ -19,6 +19,8 @@ FROM bronze.crm_customers
 WHERE customer_id IS NOT NULL;
 
 =========================================================
+*/
+
 DROP TABLE IF EXISTS silver.orders;
 
 CREATE TABLE silver.orders AS
