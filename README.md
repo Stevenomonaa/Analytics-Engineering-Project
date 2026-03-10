@@ -29,14 +29,19 @@ Analytics  →    Insights & EDA
 
 Source (Kaggle CSV)
    ↓
+
 Bronze Tables
    ↓
+
 Silver Clean Tables
    ↓
+
 Gold Star Schema
    ↓
+
 Analytics Views
    ↓
+
 Business Insights
 
 ⭐ Key Features:
