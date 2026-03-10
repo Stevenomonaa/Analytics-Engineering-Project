@@ -7,6 +7,7 @@ Script Purpose:
     if they already exist.
 	  Run this script to re-define the DDL structure of 'bronze' Tables
 ===============================================================================
+*/
 
 DROP TABLE IF EXISTS silver.customers;
 CREATE TABLE silver.customers AS
@@ -18,8 +19,8 @@ SELECT DISTINCT
 FROM bronze.crm_customers
 WHERE customer_id IS NOT NULL;
 
-=========================================================
-*/
+======================================================
+
 
 DROP TABLE IF EXISTS silver.orders;
 
