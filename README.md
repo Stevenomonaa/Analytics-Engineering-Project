@@ -18,6 +18,7 @@ Raw transactional data was transformed through Bronze → Silver → Gold layers
 🧱 Architecture:
 
 Layer	             Purpose
+
 Bronze     →    Raw ingestion
 Silver	  →   Cleaned business entities
 Gold	     →    Analytics star schema
